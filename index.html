@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FindSTD - Indian STD Code Finder</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">
+                <i class="fas fa-phone-alt title-icon"></i>
+                FindSTD
+            </h1>
+            <p class="subtitle">Quick Indian telephone area codes</p>
+        </div>
+
+        <div class="search-section">
+            <div class="search-container">
+                <form class="search-form" id="searchForm">
+                    <div class="input-group">
+                        <label class="input-label">City Name</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-search input-icon"></i>
+                            <input type="text" id="searchQuery" placeholder="Enter city name..." required>
+                        </div>
+                    </div>
+
+                    <div class="button-group">
+                        <button type="submit" class="search-btn" id="searchBtn">
+                            <i class="fas fa-search"></i>
+                            Find STD Code
+                        </button>
+                        <button type="button" class="reset-btn" id="resetBtn">
+                            <i class="fas fa-redo"></i>
+                            Clear
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="results-container" id="resultsContainer">
+            <h3 class="results-title">
+                <i class="fas fa-list"></i>
+                Search Results
+            </h3>
+            <div id="resultsContent"></div>
+        </div>
+    </div>
+
+    <div class="footer">
+        Made with <span class="heart">❤️</span> by Sauravhhh
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
